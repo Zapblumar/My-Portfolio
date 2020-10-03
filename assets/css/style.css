@@ -2,45 +2,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-body {
-    background-color: #d9dcd6;
+    background-color: peachpuff;
 }
 /* need to add img in background */
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
     background-color: #034f75;
-    color: #ffffff;
+    color: violet;
 }
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 .header h1 {
-    color: #d9dcd6;
+    color: goldenrod;
 }
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
-.header div ul {
-    list-style-type: none;
 }
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-p {
-    font-size: 16px;
-}
+
 .background{
     height: 800px;
     width: 100%;
@@ -48,15 +35,6 @@ p {
     background-image: url("../css/images/DandDtwo.jfif");
     background-size: cover;
     background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-.float-right {
-    float: right;
-    margin-left: 25px;
 }
 
 .content {
@@ -68,22 +46,19 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
     color: magenta;
-}
+    }
 .About-Me h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    float: left;
 }
 .Work {
-    margin-bottom: 20px;
+    margin: 0;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #034f75;
-    color: magenta;
+       color: magenta;
+       padding: 20px;
+       text-align: left;
 }
 .grid-item {
     display: flex;
@@ -104,22 +79,30 @@ p {
 .item-1{
 grid-column: 1/ span 4;
 grid-row: 1/ span 4;
+background-image: url("../css/images/Run-Buddy.png");
 }
 .item-2{
     grid-row: 1/ span 4;
     grid-column: 5/ span 3;
+    background-image: url("../css/images/calculator.jfif");
 }
 .item-3{
     grid-column: 8/ span 3;
     grid-row: 1/ span 4;
+    background-image: url("../css/images/web-internet.jfif");
 }
 .item-4{
     grid-column: 1/ span 3;
     grid-row: 5/ span 4;
+    background-image: url("./images/led-world.png");
 }
 .item-5{
     grid-column: 4/ span 3;
     grid-row: 5/ span 4;
+    background-image: url("../css/images/games.jfif");
+}
+.p{
+    text-align: left;
 }
 
 .Work h2 {
@@ -130,22 +113,26 @@ grid-row: 1/ span 4;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #034f75;
+   background-color: #034f75;
     color: magenta;
 }
 .Contact-me h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/* footer */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
 
-.footer h2 {
-    font-size: 20px;
+@media screen and (max-width: 700px) {
+    *{
+        background-color: black;
+    }
+    body {
+        background-color: black;
+    }
+    h2 {
+        color: teal;
+        text-decoration-style: wavy;
+    }
+    p {
+        color: rgb(255, 14, 14)
+    }
 }
